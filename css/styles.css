@@ -515,17 +515,6 @@ body {
   fill: #ffffff;
 }
 
-/*.footer-social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
@@ -624,6 +613,73 @@ body {
   letter-spacing: 0.03em;
   /*color: rgba(255, 255, 255, 0.6);*/
   color: var(--white-text-color);
+}
+
+.subscribe-area {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+
+.subscibe-area-title {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-flex;
+}
+
+.subscibe-form {
+  display: flex;
+}
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  /*   border: transparent; */
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.subscribe-btn {
+  margin-left: 12px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  border: transparent;
+}
+.send-icon {
+  margin-left: 10px;
 }
 /*------------------portfolio.html----------------------*/
 .filter-section {
@@ -762,6 +818,7 @@ body {
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
+  padding: 40px;
 
   position: absolute;
   top: 50%;
@@ -793,4 +850,82 @@ body {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.modal-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 28px;
+  padding-left: 45px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.comment-place {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-btn-send {
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  color: #ffffff;
+  border: transparent;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* .modal-input-wrap {
+  position: relative;
+} */
+.modal-input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: tomato;
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus {
+  border-color: tomato;
+}
+
+.comment-place {
+  padding: 16px;
+}
+.modal-input-wrap {
+  position: relative;
 }
